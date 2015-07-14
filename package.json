@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/mirceaalexandru/seneca-local-auth",
   "dependencies": {
-    "passport-github": "0.1.5",
+    "passport-local": "0.1.5",
     "lodash": "~3.10.0"
   },
   "peerDependencies": {
