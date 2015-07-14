@@ -1,0 +1,32 @@
+{
+  "name": "seneca-local-auth",
+  "version": "0.0.1",
+  "description": "local auth plugin for seneca-auth",
+  "main": "local-auth.js",
+  "scripts": {
+    "test": "mocha test --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mirceaalexandru/seneca-local-auth"
+  },
+  "keywords": [
+    "seneca",
+    "auth",
+    "plugin"
+  ],
+  "author": "Mircea Alexandru <mircea.alexandru@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mirceaalexandru/seneca-local-auth/issues"
+  },
+  "homepage": "https://github.com/mirceaalexandru/seneca-local-auth",
+  "dependencies": {
+    "passport-github": "0.1.5",
+    "lodash": "~3.10.0"
+  },
+  "peerDependencies": {
+    "seneca-auth": "*",
+    "seneca": "*"
+  }
+}
