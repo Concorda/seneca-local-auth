@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "local auth plugin for seneca-auth",
   "main": "local-auth.js",
-  "scripts": {
-    "test": "mocha test --reporter spec"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/mirceaalexandru/seneca-local-auth"
@@ -15,7 +12,11 @@
     "auth",
     "plugin"
   ],
-  "author": "Mircea Alexandru <mircea.alexandru@gmail.com>",
+  "author": {
+    "name": "Mircea Alexandru",
+    "email":"mircea.alexandru@gmail.com",
+    "url" : "https://github.com/mirceaalexandru"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mirceaalexandru/seneca-local-auth/issues"
