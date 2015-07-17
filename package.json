@@ -2,7 +2,7 @@
   "name": "seneca-local-auth",
   "version": "0.0.1",
   "description": "local auth plugin for seneca-auth",
-  "main": "local-auth.js",
+  "main": "app.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/mirceaalexandru/seneca-local-auth"
@@ -20,7 +20,7 @@
   "files": [
     "LICENSE.txt",
     "README.md",
-    "local-auth.js"
+    "app.js"
   ],
   "license": "MIT",
   "bugs": {
