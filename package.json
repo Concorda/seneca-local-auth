@@ -17,6 +17,12 @@
     "email":"mircea.alexandru@gmail.com",
     "url" : "https://github.com/mirceaalexandru"
   },
+  "files": [
+    "LICENSE.txt",
+    "README.md",
+    "local-auth.js",
+    "default-options.js"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mirceaalexandru/seneca-local-auth/issues"
