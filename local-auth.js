@@ -9,7 +9,13 @@ module.exports = function (options) {
     function (username, password, done) {
       seneca.act({role: 'user', cmd: 'login', nick: username, email: username, password: password},
         function (err, out) {
-          done(out)
+          if (err){
+            return done(err)
+          }
+          if (!out.ok){
+            return done(out.why)
+          }
+          done(err, out)
         })
     }
   )
