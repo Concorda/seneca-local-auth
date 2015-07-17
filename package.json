@@ -1,6 +1,6 @@
 {
   "name": "seneca-local-auth",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "local auth plugin for seneca-auth",
   "main": "app.js",
   "repository": {
