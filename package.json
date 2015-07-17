@@ -20,8 +20,7 @@
   "files": [
     "LICENSE.txt",
     "README.md",
-    "local-auth.js",
-    "default-options.js"
+    "local-auth.js"
   ],
   "license": "MIT",
   "bugs": {
