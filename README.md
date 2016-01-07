@@ -1,5 +1,5 @@
 ![Seneca](http://senecajs.org/files/assets/seneca-logo.png)
-> A [Seneca.js][] a seneca-auth plugin
+> A [Seneca.js](http://senecajs.org) a seneca-auth plugin
 
 # seneca-local-auth
 
