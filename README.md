@@ -1,5 +1,5 @@
 ![Seneca](http://senecajs.org/files/assets/seneca-logo.png)
-> A [Seneca.js](http://senecajs.org) a seneca-auth plugin
+> A [Seneca.js](https://github.com/senecajs/) a seneca-auth plugin
 
 # seneca-local-auth
 
@@ -19,8 +19,8 @@ For a gentle introduction to Seneca itself, see the [senecajs.org](http://seneca
 If you're using this plugin module, feel to contact on twitter if you have any questions! :) [@Alexandru_M](https://twitter.com/Alexandru_M)
 
 - __Version:__ 0.0.3
-- __Tested on:__ Seneca 0.7, 0.8, 0.9
-- __Node:__ 0.10, 0.12, 4, 5
+- __Tested on:__ Seneca 0.8, 0.9
+- __Node:__ 4, 5
 - __License:__ [MIT][]
 
 
@@ -35,11 +35,8 @@ npm install seneca-local-auth
 When using seneca-auth the local auth must be initialized using:
 
 ```
-..........
 seneca.use('auth')
 seneca.use('local-auth', options)
-..........
-
 ```
 
 ## Test
@@ -50,7 +47,7 @@ npm run test
 ```
 
 ## Contributing
-The [Senecajs org][] encourage open participation. If you feel you can help in any way, be it with
+The [Senecajs org](https://github.com/senecajs/) encourage open participation. If you feel you can help in any way, be it with
 documentation, examples, extra testing, or new features please get in touch.
 
 ## License
