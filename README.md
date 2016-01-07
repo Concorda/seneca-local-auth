@@ -38,7 +38,7 @@ seneca.use('local-auth', options)
 
 [npm-badge]: https://badge.fury.io/js/seneca-local-auth.svg
 [npm-url]: https://badge.fury.io/js/seneca-local-auth
-[david-badge]: https://david-dm.org/senecajs/seneca-local-auth.svg
-[david-url]: https://david-dm.org/senecajs/seneca-local-auth
+[david-badge]: https://david-dm.org/mirceaalexandru/seneca-local-auth.svg
+[david-url]: https://david-dm.org/mirceaalexandru/seneca-local-auth
 [gitter-badge]: https://badges.gitter.im/senecajs/seneca.png
 [gitter-url]: https://gitter.im/senecajs/seneca
