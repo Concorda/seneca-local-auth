@@ -1,5 +1,5 @@
-var passport_local = require('passport-local')
-var LocalStrategy = passport_local.Strategy
+var Passport_local = require('passport-local')
+var LocalStrategy = Passport_local.Strategy
 
 module.exports = function (options) {
   var seneca = this
@@ -9,10 +9,10 @@ module.exports = function (options) {
     function (username, password, done) {
       seneca.act({role: 'user', cmd: 'login', nick: username, email: username, password: password},
         function (err, out) {
-          if (err){
+          if (err) {
             return done(err)
           }
-          if (!out.ok){
+          if (!out.ok) {
             return done(out.why)
           }
           done(err, out)
