@@ -1,3 +1,7 @@
+var error = require('eraro')({
+  package: 'local-auth'
+})
+
 module.exports = function (options) {
   var seneca = this
   var internals = {}
@@ -6,6 +10,10 @@ module.exports = function (options) {
     'hapi'
   ]
   internals.options = options
+
+  if (!options.framework) {
+    options.framework = 'express'
+  }
 
   internals.choose_framework = function () {
     if ('express' === internals.options.framework) {
@@ -21,7 +29,7 @@ module.exports = function (options) {
       internals.options.framework = seneca.options().plugin.web.framework
     }
 
-    if (_.indexOf(internals.accepted_framworks, internals.options.framework) === -1) {
+    if (internals.accepted_framworks.indexOf(internals.options.framework) === -1) {
       throw error('Framework type <' + internals.options.framework + '> not supported.')
     }
   }
