@@ -1,26 +1,41 @@
-var Passport_local = require('passport-local')
-var LocalStrategy = Passport_local.Strategy
-
 module.exports = function (options) {
   var seneca = this
-  var service = 'local'
+  var internals = {}
+  internals.accepted_framworks = [
+    'express',
+    'hapi'
+  ]
+  internals.options = options
 
-  var authPlugin = new LocalStrategy(
-    function (username, password, done) {
-      seneca.act({role: 'user', cmd: 'login', nick: username, email: username, password: password},
-        function (err, out) {
-          if (err) {
-            return done(err)
-          }
-          if (!out.ok) {
-            return done(out.why)
-          }
-          done(err, out)
-        })
+  internals.choose_framework = function () {
+    if ('express' === internals.options.framework) {
+      internals.load_express_implementation()
     }
-  )
+    else {
+      internals.load_hapi_implementation()
+    }
+  }
 
-  seneca.act({role: 'auth', cmd: 'register_service', service: service, plugin: authPlugin, conf: options})
+  internals.check_options = function () {
+    if (seneca.options().plugin.web && seneca.options().plugin.web.framework) {
+      internals.options.framework = seneca.options().plugin.web.framework
+    }
+
+    if (_.indexOf(internals.accepted_framworks, internals.options.framework) === -1) {
+      throw error('Framework type <' + internals.options.framework + '> not supported.')
+    }
+  }
+
+  internals.load_express_implementation = function () {
+    seneca.use(require('./lib/express-local-auth'), internals.options)
+  }
+
+  internals.load_hapi_implementation = function () {
+    seneca.use(require('./lib/hapi-local-auth'), internals.options)
+  }
+
+  internals.check_options()
+  internals.choose_framework()
 
   return {
     name: 'local-auth'
