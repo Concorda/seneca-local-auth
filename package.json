@@ -23,7 +23,8 @@
   "files": [
     "LICENSE.txt",
     "README.md",
-    "local-auth.js"
+    "local-auth.js",
+    "lib"
   ],
   "license": "MIT",
   "bugs": {
@@ -31,6 +32,7 @@
   },
   "homepage": "https://github.com/mirceaalexandru/seneca-local-auth",
   "dependencies": {
+    "eraro": "0.4.1",
     "lodash": "~3.10.0",
     "passport-local": "0.1.5"
   },
