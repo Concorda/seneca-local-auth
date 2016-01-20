@@ -18,7 +18,7 @@ For a gentle introduction to Seneca itself, see the [senecajs.org](http://seneca
 
 If you're using this plugin module, feel to contact on twitter if you have any questions! :) [@Alexandru_M](https://twitter.com/Alexandru_M)
 
-- __Version:__ 0.0.3
+- __Version:__ 0.1.0
 - __Tested on:__ Seneca 0.8, 0.9
 - __Node:__ 4, 5
 - __License:__ [MIT][]
