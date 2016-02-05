@@ -56,11 +56,11 @@ Copyright Mircea Alexandru and other contributors 2015, Licensed under [MIT][].
 
 [npm-badge]: https://badge.fury.io/js/seneca-local-auth.svg
 [npm-url]: https://badge.fury.io/js/seneca-local-auth
-[david-badge]: https://david-dm.org/mirceaalexandru/seneca-local-auth.svg
-[david-url]: https://david-dm.org/mirceaalexandru/seneca-local-auth
+[david-badge]: https://david-dm.org/senecajs/seneca-local-auth.svg
+[david-url]: https://david-dm.org/senecajs/seneca-local-auth
 [gitter-badge]: https://badges.gitter.im/senecajs/seneca.png
 [gitter-url]: https://gitter.im/senecajs/seneca
-[travis-badge]: https://travis-ci.org/mirceaalexandru/seneca-local-auth.svg
-[travis-url]: https://travis-ci.org/mirceaalexandru/seneca-local-auth
+[travis-badge]: https://travis-ci.org/senecajs/seneca-local-auth.svg
+[travis-url]: https://travis-ci.org/senecajs/seneca-local-auth
 
 [MIT]: ./LICENSE
