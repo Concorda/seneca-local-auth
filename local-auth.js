@@ -42,8 +42,13 @@ module.exports = function (options) {
     seneca.use(require('./lib/hapi-local-auth'), internals.options)
   }
 
-  internals.check_options()
-  internals.choose_framework()
+  function init (args, done) {
+    internals.check_options()
+    internals.choose_framework()
+    done()
+  }
+
+  seneca.add('init: local-auth', init)
 
   return {
     name: 'local-auth'

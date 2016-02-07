@@ -74,8 +74,13 @@
     seneca.use(<span class="hljs-built_in">require</span>(<span class="hljs-string">'./lib/hapi-local-auth'</span>), internals.options)
   }
 
-  internals.check_options()
-  internals.choose_framework()
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">init</span> (<span class="hljs-params">args, done</span>) </span>{
+    internals.check_options()
+    internals.choose_framework()
+    done()
+  }
+
+  seneca.add(<span class="hljs-string">'init: local-auth'</span>, init)
 
   <span class="hljs-keyword">return</span> {
     name: <span class="hljs-string">'local-auth'</span>
